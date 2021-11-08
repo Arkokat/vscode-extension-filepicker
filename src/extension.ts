@@ -99,7 +99,7 @@ async function select(args: {
 export function activate(context: vscode.ExtensionContext) {
 
 	console.log('Congratulations, your extension "filepicker" is now active!');
-
+	
 	let disposable = vscode.commands.registerCommand('filepicker.select', select, context);
 
 	context.subscriptions.push(disposable);
